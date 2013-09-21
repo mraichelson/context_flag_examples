@@ -51,11 +51,11 @@ function context_flag_examples_flag_default_flags() {
     'access_author' => '',
     'show_contextual_link' => 0,
     'i18n' => 0,
-    'api_version' => 3,
     'module' => 'context_flag_examples',
     'locked' => array(
       0 => 'name',
     ),
+    'api_version' => 3,
   );
   // Exported flag: "Hide right sidebar".
   $flags['hide_right_sidebar'] = array(
@@ -87,11 +87,41 @@ function context_flag_examples_flag_default_flags() {
     'access_author' => '',
     'show_contextual_link' => 0,
     'i18n' => 0,
-    'api_version' => 3,
     'module' => 'context_flag_examples',
     'locked' => array(
       0 => 'name',
     ),
+    'api_version' => 3,
+  );
+  // Exported flag: "Special User Flag".
+  $flags['special_user_flag'] = array(
+    'entity_type' => 'user',
+    'title' => 'Special User Flag',
+    'global' => 1,
+    'types' => array(),
+    'flag_short' => 'Make this user Special',
+    'flag_long' => '',
+    'flag_message' => '',
+    'unflag_short' => 'Make this user Normal',
+    'unflag_long' => '',
+    'unflag_message' => '',
+    'unflag_denied_text' => '',
+    'link_type' => 'toggle',
+    'weight' => 0,
+    'show_in_links' => array(
+      'full' => 0,
+    ),
+    'show_as_field' => 0,
+    'show_on_form' => 0,
+    'access_author' => '',
+    'show_contextual_link' => 0,
+    'show_on_profile' => 1,
+    'access_uid' => '',
+    'module' => 'context_flag_examples',
+    'locked' => array(
+      0 => 'name',
+    ),
+    'api_version' => 3,
   );
   return $flags;
 

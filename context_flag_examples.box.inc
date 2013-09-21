@@ -85,5 +85,20 @@ function context_flag_examples_default_box() {
   );
   $export['right_default'] = $box;
 
+  $box = new stdClass();
+  $box->disabled = FALSE; /* Edit this to true to make a default box disabled initially */
+  $box->api_version = 1;
+  $box->delta = 'special_user';
+  $box->plugin_key = 'simple';
+  $box->title = 'You\'re special';
+  $box->description = 'Special User Message';
+  $box->options = array(
+    'body' => array(
+      'value' => 'Someone likes you, you\'re a special user.',
+      'format' => 'filtered_html',
+    ),
+  );
+  $export['special_user'] = $box;
+
   return $export;
 }

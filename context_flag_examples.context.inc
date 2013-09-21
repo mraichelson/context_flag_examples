@@ -57,6 +57,39 @@ function context_flag_examples_context_default_contexts() {
   $context = new stdClass();
   $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
   $context->api_version = 3;
+  $context->name = 'cf_user';
+  $context->description = 'settings for users flagged as special.';
+  $context->tag = 'context_flag';
+  $context->conditions = array(
+    'user_account_active' => array(
+      'values' => array(
+        'special_user_flag' => 'special_user_flag',
+      ),
+    ),
+  );
+  $context->reactions = array(
+    'block' => array(
+      'blocks' => array(
+        'boxes-special_user' => array(
+          'module' => 'boxes',
+          'delta' => 'special_user',
+          'region' => 'highlighted',
+          'weight' => '-10',
+        ),
+      ),
+    ),
+  );
+  $context->condition_mode = 1;
+
+  // Translatables
+  // Included for use with string extractors like potx.
+  t('context_flag');
+  t('settings for users flagged as special.');
+  $export['cf_user'] = $context;
+
+  $context = new stdClass();
+  $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
+  $context->api_version = 3;
   $context->name = 'hide_both_sidebars';
   $context->description = '';
   $context->tag = 'context_flag';
