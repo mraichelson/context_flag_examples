@@ -107,13 +107,13 @@ function context_flag_examples_context_default_contexts() {
         'boxes-no_rails' => array(
           'module' => 'boxes',
           'delta' => 'no_rails',
-          'region' => 'content',
+          'region' => 'highlighted',
           'weight' => '-10',
         ),
       ),
     ),
   );
-  $context->condition_mode = 0;
+  $context->condition_mode = 1;
 
   // Translatables
   // Included for use with string extractors like potx.
