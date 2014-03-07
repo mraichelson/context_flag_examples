@@ -37,7 +37,7 @@ function context_flag_examples_flag_default_flags() {
     'unflag_long' => '',
     'unflag_message' => '',
     'unflag_denied_text' => '',
-    'link_type' => 'toggle',
+    'link_type' => 'normal',
     'weight' => 0,
     'show_in_links' => array(
       'full' => 'full',
@@ -45,6 +45,7 @@ function context_flag_examples_flag_default_flags() {
       'rss' => 0,
       'search_index' => 0,
       'search_result' => 0,
+      'diff_standard' => 0,
     ),
     'show_as_field' => 0,
     'show_on_form' => 0,
@@ -73,7 +74,7 @@ function context_flag_examples_flag_default_flags() {
     'unflag_long' => '',
     'unflag_message' => '',
     'unflag_denied_text' => '',
-    'link_type' => 'toggle',
+    'link_type' => 'normal',
     'weight' => 0,
     'show_in_links' => array(
       'full' => 'full',
@@ -81,6 +82,7 @@ function context_flag_examples_flag_default_flags() {
       'rss' => 0,
       'search_index' => 0,
       'search_result' => 0,
+      'diff_standard' => 0,
     ),
     'show_as_field' => 0,
     'show_on_form' => 0,
