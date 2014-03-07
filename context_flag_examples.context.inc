@@ -99,6 +99,9 @@ function context_flag_examples_context_default_contexts() {
         'hide_left_sidebar' => 'hide_left_sidebar',
         'hide_right_sidebar' => 'hide_right_sidebar',
       ),
+      'options' => array(
+        'flag_node_active' => 1,
+      ),
     ),
   );
   $context->reactions = array(
