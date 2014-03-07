@@ -38,7 +38,7 @@ function context_flag_examples_flag_default_flags() {
     'unflag_message' => '',
     'unflag_denied_text' => '',
     'link_type' => 'normal',
-    'weight' => 0,
+    'weight' => -7,
     'show_in_links' => array(
       'full' => 'full',
       'teaser' => 0,
@@ -75,7 +75,7 @@ function context_flag_examples_flag_default_flags() {
     'unflag_message' => '',
     'unflag_denied_text' => '',
     'link_type' => 'normal',
-    'weight' => 0,
+    'weight' => -6,
     'show_in_links' => array(
       'full' => 'full',
       'teaser' => 0,
@@ -109,7 +109,7 @@ function context_flag_examples_flag_default_flags() {
     'unflag_message' => '',
     'unflag_denied_text' => '',
     'link_type' => 'toggle',
-    'weight' => 0,
+    'weight' => -8,
     'show_in_links' => array(
       'full' => 0,
     ),
