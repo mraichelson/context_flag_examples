@@ -61,9 +61,12 @@ function context_flag_examples_context_default_contexts() {
   $context->description = 'settings for users flagged as special.';
   $context->tag = 'context_flag';
   $context->conditions = array(
-    'user_account_active' => array(
+    'flag_user_account_active' => array(
       'values' => array(
         'special_user_flag' => 'special_user_flag',
+      ),
+      'options' => array(
+        'flag_user_account_active' => 0,
       ),
     ),
   );
@@ -94,7 +97,7 @@ function context_flag_examples_context_default_contexts() {
   $context->description = '';
   $context->tag = 'context_flag';
   $context->conditions = array(
-    'node_active' => array(
+    'flag_node_active' => array(
       'values' => array(
         'hide_left_sidebar' => 'hide_left_sidebar',
         'hide_right_sidebar' => 'hide_right_sidebar',
@@ -130,9 +133,12 @@ function context_flag_examples_context_default_contexts() {
   $context->description = '';
   $context->tag = 'context_flag';
   $context->conditions = array(
-    'node_active' => array(
+    'flag_node_active' => array(
       'values' => array(
         'hide_left_sidebar' => 'hide_left_sidebar',
+      ),
+      'options' => array(
+        'flag_node_active' => 0,
       ),
     ),
   );
@@ -200,9 +206,12 @@ function context_flag_examples_context_default_contexts() {
   $context->description = '';
   $context->tag = 'context_flag';
   $context->conditions = array(
-    'node_active' => array(
+    'flag_node_active' => array(
       'values' => array(
         'hide_right_sidebar' => 'hide_right_sidebar',
+      ),
+      'options' => array(
+        'flag_node_active' => 0,
       ),
     ),
   );

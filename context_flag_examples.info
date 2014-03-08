@@ -4,6 +4,7 @@ core = 7.x
 package = Context
 dependencies[] = boxes
 dependencies[] = context
+dependencies[] = context_flag
 dependencies[] = ctools
 dependencies[] = flag
 features[box][] = left_box
