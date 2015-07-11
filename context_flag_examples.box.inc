@@ -13,6 +13,21 @@ function context_flag_examples_default_box() {
   $box = new stdClass();
   $box->disabled = FALSE; /* Edit this to true to make a default box disabled initially */
   $box->api_version = 1;
+  $box->delta = 'cf_profile_box';
+  $box->plugin_key = 'simple';
+  $box->title = 'This user is special';
+  $box->description = 'Context Flag Profile Box';
+  $box->options = array(
+    'body' => array(
+      'value' => 'This user has been flagged as special.',
+      'format' => 'filtered_html',
+    ),
+  );
+  $export['cf_profile_box'] = $box;
+
+  $box = new stdClass();
+  $box->disabled = FALSE; /* Edit this to true to make a default box disabled initially */
+  $box->api_version = 1;
   $box->delta = 'left_box';
   $box->plugin_key = 'simple';
   $box->title = 'Right Sidebar Hidden';
