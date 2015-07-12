@@ -108,7 +108,7 @@ function context_flag_examples_flag_default_flags() {
     'unflag_long' => '',
     'unflag_message' => '',
     'unflag_denied_text' => '',
-    'link_type' => 'toggle',
+    'link_type' => 'normal',
     'weight' => -8,
     'show_in_links' => array(
       'full' => 0,
